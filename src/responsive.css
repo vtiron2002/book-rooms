@@ -1,0 +1,39 @@
+@media (max-width: 1400px) {
+	ul.links {
+		width: 80%;
+	}
+
+	.location span {
+		font-size: 0.8rem;
+	}
+
+	.container {
+		grid-template-columns: 60% 40%;
+	}
+
+	.bookNow button {
+		font-size: 0.7rem;
+	}
+}
+
+@media (max-width: 1000px) {
+	.container {
+		grid-template-columns: 1fr;
+		grid-template-rows: 5rem auto auto;
+		grid-template-areas:
+			'header'
+			'map'
+			'sidebar';
+	}
+
+	ul.links {
+    width: 80%;
+    font-size: .7rem;
+  }
+
+  .header {
+  }
+  
+  .sidebar {
+  }
+}

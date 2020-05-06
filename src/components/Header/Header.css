@@ -1,0 +1,49 @@
+:root {
+	--textColor: #828786;
+	--accentColor: #479e8e;
+	--shadow: 0 0 30px 10px rgba(0, 0, 0, 0.201)
+}
+
+.header {
+	background: #fff;
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	justify-content: space-between;
+	align-items: center;
+	box-shadow: var(--shadow);
+	z-index: 99;
+}
+
+h1.logo {
+  padding: 1rem;
+  font-size: 1.3rem;
+}
+
+h1.logo strong {
+  color: var(--accentColor);
+  letter-spacing: 1px;
+  font-size: 1.8rem;
+}
+
+ul.links {
+	display: flex;
+	justify-content: space-between;
+	list-style-type: none;
+	width: 50%;
+	/* height: 100%; */
+}
+
+li.link a {
+	padding: 1.8rem 1rem;
+	color: var(--textColor);
+	transition: 0.2 ease;
+}
+
+li.link a:hover {
+	color: var(--accentColor);
+}
+
+li.link:nth-child(1) a {
+	border-bottom: var(--accentColor) 3px solid;
+	color: var(--accentColor) !important;
+}
